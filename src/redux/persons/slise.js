@@ -5,16 +5,8 @@ const personSlice = createSlice({
   initialState: {
     list: [
       {
-        name: "Vasya",
-        email: "SSS@gmail.com",
-      },
-      {
-        name: "Valya",
-        email: "fff@gmail.com",
-      },
-      {
-        name: "Vitya",
-        email: "vitya@gmail.com",
+        name: "",
+        email: "",
       },
     ],
     count: 0,
