@@ -4,6 +4,7 @@ import ListPerson from "./components/ListPerson/ListPerson";
 import { useDispatch } from "react-redux";
 import { fetchUsers } from "./redux/users/operation";
 import Task1 from "./components/Task1/Task1";
+import Task2 from "./components/Task2/Task2";
 
 const App = ({}) => {
   const dispatch = useDispatch();
@@ -14,7 +15,8 @@ const App = ({}) => {
     <div>
       {/* <Anketa />
       <ListPerson /> */}
-      <Task1 />
+      {/* <Task1 /> */}
+      <Task2 />
     </div>
   );
 };
