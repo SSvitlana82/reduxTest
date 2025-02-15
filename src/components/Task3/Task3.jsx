@@ -1,8 +1,9 @@
+/* import style from "./Task3.module.css"; */
 import { useState } from "react";
 import List from "./List/List";
 import Form from "./Form/Form";
 
-const Task2 = ({}) => {
+const Task3 = ({}) => {
   return (
     <div>
       <List />
@@ -11,4 +12,4 @@ const Task2 = ({}) => {
   );
 };
 
-export default Task2;
+export default Task3;

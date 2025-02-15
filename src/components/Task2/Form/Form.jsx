@@ -15,6 +15,7 @@ const Form = ({}) => {
       price,
       description,
       amount,
+      id: Date.now(),
     };
     dispatch(addVit(form));
     setName("");
@@ -28,9 +29,31 @@ const Form = ({}) => {
         type="text"
         value={name}
         onChange={(event) => {
-          setName(event.target);
+          setName(event.target.value);
         }}
       />
+      <input
+        type="number"
+        value={price}
+        onChange={(event) => {
+          setPrice(event.target.value);
+        }}
+      />
+      <input
+        type="text"
+        value={description}
+        onChange={(event) => {
+          setDescription(event.target.value);
+        }}
+      />
+      <input
+        type="number"
+        value={amount}
+        onChange={(event) => {
+          setAmount(event.target.value);
+        }}
+      />
+      <button onClick={handleClick}>click me</button>
     </div>
   );
 };

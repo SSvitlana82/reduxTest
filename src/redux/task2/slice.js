@@ -11,7 +11,9 @@ export const sliceTask2 = createSlice({
       state.listVit.push(payload);
     },
     deleteVit(state, { payload }) {
-      state.listVit.filter();
+      state.listVit = state.listVit.filter((vit) => {
+        return vit.id !== payload;
+      });
     },
     updateVit(state, { payload }) {
       const vit = state.listVit.findIndex((item) => {
