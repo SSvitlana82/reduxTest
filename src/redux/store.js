@@ -4,6 +4,8 @@ import reduserUsers from "./users/slice";
 import reduserGift from "./task1/slice";
 import reduserVit from "./task2/slice";
 import reduserMusike from "./task3/slice";
+import reduserBooks from "./task4/slice";
+
 export const stor = configureStore({
   reducer: {
     person: reduserPerson,
@@ -11,5 +13,6 @@ export const stor = configureStore({
     gift: reduserGift,
     vit: reduserVit,
     musike: reduserMusike,
+    bookList: reduserBooks,
   },
 });
